@@ -19,7 +19,7 @@
                         <h:outputText id="id" value="#{enderecoController.selected.id}" />
 
                         <h:outputLabel value="#{bundle.EditEnderecoLabel_municipio}" for="municipio"/>
-                        <p:selectOneMenu id="municipio" value="#{enderecoController.selected.municipio}"  converter="municipioConverter">
+                        <h:selectOneMenu id="municipio" value="#{enderecoController.selected.municipio}"  converter="municipioConverter">
                             <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
                             <f:selectItems value="#{municipioController.items}"
                                            var="municipioItem"
@@ -28,10 +28,10 @@
                                            />
                             <p:ajax update="bairro"/>
 
-                        </p:selectOneMenu>
+                        </h:selectOneMenu>
                         
                         <h:outputLabel value="#{bundle.EditEnderecoLabel_bairro}" for="bairro"/>
-                        <p:selectOneMenu id="bairro" value="#{enderecoController.selected.bairro}"  converter="bairroConverter">
+                        <h:selectOneMenu id="bairro" value="#{enderecoController.selected.bairro}"  converter="bairroConverter">
                             <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
                             <f:selectItems value="#{enderecoController.selected.municipio.bairros}"
                                            var="bairroItem"
@@ -39,7 +39,7 @@
                                            itemLabel="#{bairroItem.nome}"
                                            />
 
-                        </p:selectOneMenu>
+                        </h:selectOneMenu>
                         
                         <p:outputLabel value="#{bundle.EditEnderecoLabel_logradouro}" for="logradouro" />
                         <p:inputText style="text-transform: uppercase" id="logradouro" value="#{enderecoController.selected.logradouro}" title="#{bundle.EditEnderecoTitle_logradouro}" />
