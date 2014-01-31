@@ -6,3 +6,9 @@ function handleSubmit(xhr, status, args, dialog) {
         dialog.hide();
     }
 }
+
+function teste() {
+    var x = 5;
+    var y = x * 2;
+    alert(y);
+}
