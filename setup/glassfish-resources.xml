@@ -6,7 +6,7 @@
         <property name="portNumber" value="3306"/>
         <property name="databaseName" value="sgpm"/>
         <property name="User" value="root"/>
-        <property name="Password" value="Metropolit@no"/>
+        <property name="Password" value="systemcall"/>
         <property name="URL" value="jdbc:mysql://localhost:3306/sgpm?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
